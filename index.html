@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <header>
+        <div id="music">
+            <audio autoplay controls loop src="music/Interstellar OST _ First Step Piano cover.mp3">
+            </audio>
+        </div>
+        <h2 id="clock"></h2>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <form id="login-form" class="hidden">
+        <input 
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+        >
+        <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input required type="input" placeholder="Write a To Do and Press Enter">
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quotes">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="JS/greetings.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/quotes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
+</body>
+</html>
